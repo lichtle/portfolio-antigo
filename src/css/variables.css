@@ -1,6 +1,6 @@
 :root {
-  --header-footer-color: #ffcbf2;
-  --font-and-contact-bg-color: #383838;
-  --main-container-color: #F4ECE2;
-  --hover-color: #ffb3c6;
+  --font-color: #313131;
+  --container-color: rgb(255, 242, 242);
+  --hover-color: #cc5c5a;
+  --border-color: #fdbfbe;
 }

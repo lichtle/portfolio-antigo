@@ -11,6 +11,9 @@ body {
   grid-template-areas: "header main" "contact main" "footer footer";
   grid-template-columns: 1fr 3fr;
   max-width: 144rem;
+  background: url("../images/clouds.jpg"), no-repeat;
+  background-size: cover;
+  color: var(--font-color);
 }
 
 /* grid-area names */
@@ -35,11 +38,15 @@ body {
 
 h1 {
   font-weight: 700;
-  letter-spacing: 0.1em;
 }
 
 h2 {
   font-weight: 600;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.1em;
 }
 
 h3 {
@@ -52,7 +59,7 @@ p,
 }
 
 .contact .title {
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 .header,
@@ -61,22 +68,34 @@ p,
   text-align: center;
 }
 
+/* Spacing */
+
+body {
+  margin-top: 5rem;
+}
+
+.header {
+  margin: 0 5rem 5rem;
+}
+
+.contact {
+  margin: 0 5rem 5rem 5rem;
+}
+
+.main {
+  margin: 0 5rem 0 0;
+}
+
 /* CSS */
 
 .header {
-  min-height: 49rem;
+  min-height: 50rem;
 }
 
 .header,
+.contact,
 .footer {
-  background-color: var(--header-footer-color);
-  color: #313131;
-}
-
-.header h1::after {
-  content: url("../images/computer-kitty.png");
-  display: inline-block;
-  transform: rotateY(180deg);
+  background-color: var(--container-color);
 }
 
 .header,
@@ -93,7 +112,7 @@ p,
   width: 20rem;
   border-radius: 50%;
   padding: 1rem;
-  border: 0.1rem dashed var(--font-and-contact-bg-color);
+  border: 0.1rem dashed var(--font-color);
 }
 
 .language-icons {
@@ -105,40 +124,68 @@ p,
 
 .contact {
   min-height: 33rem;
-  background-color: var(--font-and-contact-bg-color);
-}
-
-.contact,
-.contact a {
-  color: #fff;
-}
-
-@media (hover: hover) {
-  .contact li:hover,
-  .contact a:hover {
-    color: var(--hover-color);
-    transition: 0.4s ease-in-out;
-  }
-}
-
-.contact-container .title::after {
-  content: url("../images/pencil-kitty.png");
-  display: inline-block;
-  transform: rotateY(180deg);
-}
-
-.contact-container .title::after,
-.header h1::after,
-.paw-icon {
-  margin: 0 1rem;
 }
 
 .contact .links li {
-  margin: 2rem;
+  margin: 2rem 0;
+}
+
+.contact .links li i {
+  margin: 0 0.5rem;
 }
 
 .main {
-  background-color: var(--main-container-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .about h2,
+.main .projects h2 {
+  margin-bottom: 3rem;
+}
+
+.main .about,
+.main .projects {
+  padding: 3rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  background-color: var(--container-color);
+}
+
+.main .projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.main .projects img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 0.5rem;
+}
+
+.main .projects figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem 0 0 0;
+}
+
+.main .projects li {
+  width: 25rem;
+  border: 0.2rem solid var(--border-color);
+  border-radius: 1rem;
+}
+
+.projects figure .caption {
+  text-align: center;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.projects figure .caption h3 {
+  margin-bottom: 1rem;
 }
 
 .footer {
@@ -149,6 +196,49 @@ p,
   align-items: center;
 }
 
+/* Kitty icons */
+
+.contact-container .title::after,
+.main .about h2::after,
+.header h1::after,
+.main .projects h2::after {
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.header h1::after {
+  content: url("../images/astronaut-kitty.png");
+}
+
+.contact-container .title::after {
+  content: url("../images/pencil-kitty.png");
+  transform: rotateY(180deg);
+}
+
+.main .about h2::after {
+  content: url("../images/reading-kitty.png");
+}
+
+.main .projects h2::after {
+  content: url("../images/computer-kitty.png");
+}
+
 .paw-icon {
   content: url("../images/paw.png");
+  margin: 0 1rem;
+}
+
+/* Media queries (and hover) */
+
+@media (hover: hover) {
+  .contact li:hover,
+  .contact a:hover {
+    color: var(--hover-color);
+    transition: 0.4s ease-in-out;
+  }
+
+  .main .projects img:hover {
+    opacity: 80%;
+    transition: 0.4s ease-in-out;
+  }
 }
