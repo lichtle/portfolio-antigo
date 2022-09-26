@@ -1,5 +1,11 @@
 /* Sizing settings */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -10,10 +16,10 @@ body {
   display: grid;
   grid-template-areas: "header main" "contact main" "footer footer";
   grid-template-columns: 1fr 3fr;
-  max-width: 144rem;
   background: url("../images/clouds.jpg"), no-repeat;
   background-size: cover;
   color: var(--font-color);
+  margin-top: 5rem;
 }
 
 /* grid-area names */
@@ -70,10 +76,6 @@ p,
 
 /* Spacing */
 
-body {
-  margin-top: 5rem;
-}
-
 .header {
   margin: 0 5rem 5rem;
 }
@@ -89,7 +91,7 @@ body {
 /* CSS */
 
 .header {
-  min-height: 50rem;
+  height: 50rem;
 }
 
 .header,
@@ -104,7 +106,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 35rem;
+  width: 35rem;
   padding: 1rem;
 }
 
@@ -123,7 +125,7 @@ body {
 }
 
 .contact {
-  min-height: 33rem;
+  height: 33rem;
 }
 
 .contact .links li {
@@ -240,5 +242,42 @@ body {
   .main .projects img:hover {
     opacity: 80%;
     transition: 0.4s ease-in-out;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header,
+  .contact,
+  .main {
+    width: 35rem;
+    margin-bottom: 3rem;
+  }
+
+  .main .about,
+  .main .projects {
+    margin-bottom: 3rem;
+  }
+
+  .main {
+    margin: 0 auto;
+  }
+
+  .main .projects li {
+    margin-bottom: 4rem;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .paw-icon {
+    margin: 0 3rem;
   }
 }
