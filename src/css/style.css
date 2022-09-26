@@ -1,0 +1,154 @@
+/* Sizing settings */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto Slab", serif;
+  display: grid;
+  grid-template-areas: "header main" "contact main" "footer footer";
+  grid-template-columns: 1fr 3fr;
+  max-width: 144rem;
+}
+
+/* grid-area names */
+
+.header {
+  grid-area: header;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Text and font settings */
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p,
+.contact .links {
+  font-weight: 300;
+}
+
+.contact .title {
+  letter-spacing: 0.2rem;
+}
+
+.header,
+.contact,
+.footer {
+  text-align: center;
+}
+
+/* CSS */
+
+.header {
+  min-height: 49rem;
+}
+
+.header,
+.footer {
+  background-color: var(--header-footer-color);
+  color: #313131;
+}
+
+.header h1::after {
+  content: url("../images/computer-kitty.png");
+  display: inline-block;
+  transform: rotateY(180deg);
+}
+
+.header,
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 35rem;
+  padding: 1rem;
+}
+
+.header .profile-pic {
+  width: 20rem;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 0.1rem dashed var(--font-and-contact-bg-color);
+}
+
+.language-icons {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 16rem;
+  font-size: 2.5rem;
+}
+
+.contact {
+  min-height: 33rem;
+  background-color: var(--font-and-contact-bg-color);
+}
+
+.contact,
+.contact a {
+  color: #fff;
+}
+
+@media (hover: hover) {
+  .contact li:hover,
+  .contact a:hover {
+    color: var(--hover-color);
+    transition: 0.4s ease-in-out;
+  }
+}
+
+.contact-container .title::after {
+  content: url("../images/pencil-kitty.png");
+  display: inline-block;
+  transform: rotateY(180deg);
+}
+
+.contact-container .title::after,
+.header h1::after,
+.paw-icon {
+  margin: 0 1rem;
+}
+
+.contact .links li {
+  margin: 2rem;
+}
+
+.main {
+  background-color: var(--main-container-color);
+}
+
+.footer {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paw-icon {
+  content: url("../images/paw.png");
+}
