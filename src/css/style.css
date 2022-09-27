@@ -5,6 +5,8 @@ html {
 }
 
 body {
+  max-width: 1440px;
+  margin: 5rem auto 0 auto;
   font-size: 1.6rem;
   font-family: "Roboto Slab", serif;
   display: grid;
@@ -13,7 +15,6 @@ body {
   background: url("../images/clouds.jpg"), no-repeat;
   background-size: cover;
   color: var(--font-color);
-  margin-top: 5rem;
 }
 
 /* grid-area names */
