@@ -35,11 +35,6 @@
     margin: 0 auto;
   }
 
-  .main .about,
-  .main .projects {
-    margin-bottom: 3rem;
-  }
-
   .main .projects li {
     width: 35rem;
     margin-bottom: 4rem;
@@ -51,11 +46,11 @@
   }
 
   .main .projects figure {
-    margin: 2rem 0 0 0;
+    margin-top: 2.2rem;
   }
 
   .footer {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 
   .paw-icon {
@@ -79,9 +74,12 @@
     height: 22rem;
   }
 
+  .main .projects figure {
+    margin-top: 3rem;
+  }
+
   .footer {
     padding: 2rem;
-    width: 100%;
   }
 }
 
@@ -93,6 +91,6 @@
   }
 
   .main .projects figure {
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
   }
 }
