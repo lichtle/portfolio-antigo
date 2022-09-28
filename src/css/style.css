@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1440px;
   margin-top: 4.5rem;
   display: grid;
   grid-template-areas: "header main" "contact main" "footer footer";
