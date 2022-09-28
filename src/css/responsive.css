@@ -12,11 +12,12 @@
 }
 
 @media (max-width: 1024px) {
-  body {
+  .container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 3rem;
   }
 
   .header,
@@ -54,60 +55,7 @@
   }
 
   .footer {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .paw-icon {
-    margin: 0 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-  }
-
-  .header,
-  .contact,
-  .main {
-    width: 50rem;
-    margin-bottom: 3rem;
-  }
-
-  .contact .links li {
-    font-size: 2rem;
-  }
-
-  .main {
-    margin: 0 auto;
-  }
-
-  .main .about,
-  .main .projects {
-    margin-bottom: 3rem;
-  }
-
-  .main .projects li {
-    width: 35rem;
-    margin-bottom: 4rem;
-  }
-
-  .main .projects img {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  .main .projects figure {
-    margin: 2rem 0 0 0;
-  }
-
-  .footer {
-    width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem;
   }
 
   .paw-icon {
@@ -116,35 +64,14 @@
 }
 
 @media (max-width: 576px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-  }
-
   .header,
   .contact,
   .main {
     width: 35rem;
-    margin-bottom: 3rem;
   }
 
   .contact .links li {
     font-size: 1.8rem;
-  }
-
-  .main .about,
-  .main .projects {
-    margin-bottom: 3rem;
-  }
-
-  .main {
-    margin: 0 auto;
-  }
-
-  .main .projects li {
-    margin-bottom: 4rem;
   }
 
   .main .projects img {
@@ -152,17 +79,9 @@
     height: 22rem;
   }
 
-  .main .projects figure {
-    margin: 3rem 0 0 0;
-  }
-
   .footer {
-    width: 100%;
     padding: 2rem;
-  }
-
-  .paw-icon {
-    margin: 0 3rem;
+    width: 100%;
   }
 }
 
