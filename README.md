@@ -2,7 +2,7 @@
 
 Portfolio que fiz com muito carinho para apresentar um pouco sobre mim e meus projetos! :heart:
 
-## Screenshots do projeto
+## Screenshots
 
 ### Desktop
 
