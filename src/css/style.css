@@ -5,7 +5,6 @@ html {
 }
 
 body {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,15 +91,16 @@ p,
 
 /* CSS */
 
+.header {
+  height: 50rem;
+}
+
 .header,
 .contact,
 .main .about,
 .main .projects {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.header {
-  height: 50rem;
+  background-color: var(--container-color);
 }
 
 .header,
@@ -161,7 +161,6 @@ p,
   padding: 3rem;
   margin-bottom: 5rem;
   width: 100%;
-  background-color: var(--container-color);
 }
 
 .main .projects ul {
