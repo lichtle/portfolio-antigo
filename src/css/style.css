@@ -237,3 +237,22 @@ p,
   content: url("../images/paw.png");
   margin: 0 1rem;
 }
+
+@media (hover: hover) {
+  .contact li:hover,
+  .contact a:hover,
+  .language-icons i:hover {
+    color: var(--hover-color);
+  }
+
+  .main .projects img:hover {
+    opacity: 80%;
+  }
+}
+
+.contact li,
+.contact a,
+.main .projects img,
+.language-icons i {
+  transition: 0.4s ease-in-out;
+}
